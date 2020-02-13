@@ -1,0 +1,29 @@
+{
+  "name": "js-pratice",
+  "version": "1.0.0",
+  "description": "js基础练习",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "koa": "node ./src/koa/my-koa-app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pwjworks/js-pratice.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pwjworks/js-pratice/issues"
+  },
+  "homepage": "https://github.com/pwjworks/js-pratice#readme",
+  "dependencies": {
+    "koa": "^2.11.0",
+    "vue-meta": "^2.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4"
+  }
+}
