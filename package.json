@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/pwjworks/js-pratice#readme",
   "dependencies": {
+    "jquery": "^3.4.1",
     "koa": "^2.11.0",
     "vue-meta": "^2.3.2"
   },
