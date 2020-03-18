@@ -34,8 +34,8 @@ int main()
         nums.push_back(i);
     }
     quickSort(nums, 0, 4);
-    // for (auto it : nums) {
-    //     cout << it;
-    // }
+    for (auto it : nums) {
+        cout << it;
+    }
     return 0;
 }

@@ -1,7 +1,7 @@
 const myAJAX = function (url) {
   return new Promise((resolve, reject) => {
     var xhr = new XMLHttpRequest()
-    xhr.open('GET', url.true)
+    xhr.open('GET', url, true)
     xhr.onreadystatechange = function () {
       if (this.readyState === 4) {
         if (this.status === 200) {
