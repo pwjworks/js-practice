@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script>
+  function checkHash(){
+    var data=''
+    switch(location.hash){
+      case '#sayHello':
+        data='HelloWorld'
+        break
+      case '#sayHi':
+        data='HiWorld'
+        break
+      default: break
+    }
+    data&&callBack('#'+data)
+  }
+  function callBack(hash){
+    var proxy=document.createElement('iframe')
+    proxy.style.display = 'none';
+    proxy.src = 'http://localhost/c.html'+hash;
+    document.body.appendChild(proxy);
+  }
+  window.onload = checkHash;
+</script>
+</html>

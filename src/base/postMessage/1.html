@@ -1,0 +1,18 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <iframe id="f" src="http://127.0.0.1:5500/js-practice/src/base/postMessage/test.html"></iframe>
+</body>
+<script>
+  var f=document.getElementById('f')
+  f.onload=function(){
+    setTimeout(function(){
+      f.contentWindow.postMessage("123","http://127.0.0.1:5500/js-practice/src/base/postMessage/test.html")
+    },3000)
+  }
+</script>
+</html>

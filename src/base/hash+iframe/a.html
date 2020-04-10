@@ -1,0 +1,33 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script type="text/javascript">
+  alert('a')
+
+  function sendRequest() {
+    var ifr = document.createElement('iframe')
+    ifr.style.display = 'none'
+    ifr.src = 'http://'
+    document.body.appendChild(ifr)
+  }
+
+  function checkHash() {
+    var data = location.hash ? location.hash.substring(1) : ''
+    if (data) {
+      console.log(data)
+      location.hash = ''
+    }
+  }
+  setInterval(checkHash, 1000)
+  window.onload = sendRequest
+</script>
+
+</html>

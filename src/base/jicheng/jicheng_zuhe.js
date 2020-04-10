@@ -12,10 +12,10 @@ Animal.prototype.eat = function (food) {
 }
 
 function Cat (name) {
-  Animal.call(this)//! important
+  Animal.call(this) //! important
   this.name = name || 'Tom'
 }
-Cat.prototype = new Animal()//! important
+Cat.prototype = new Animal() //! important
 Cat.prototype.constructor = Cat
 var cat = new Cat()
 console.log(cat.name)
