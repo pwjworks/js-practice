@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div></div>
+</body>
+<script>
+  var mp=new Map();
+  function fds(node){
+    if(node.nodeType===1){
+      mp.set(node.nodeName,1);
+    }
+    var children=node.childNodes;
+    for(let i=0;i<children.length;i++){
+      fds(children[i]);
+    }
+  }
+  fds(document);
+  console.log([...mp.keys()])
+  for(let key of mp.keys()){
+    console.log(key);
+  }
+</script>
+</html>
