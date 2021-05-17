@@ -1,0 +1,14 @@
+<body>
+    <div id="conditional-rendering">
+        <span v-if="seen">现在你看到我了</span>
+    </div>
+    <div id="list-rendering">
+        <ol>
+            <li v-for="todo in todos">
+                {{ todo.text }}
+            </li>
+        </ol>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="./index.js"></script>
+</body>

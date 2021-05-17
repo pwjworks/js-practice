@@ -1,0 +1,12 @@
+<body>
+    <div id="event-handling">
+        <p>{{ message }}</p>
+        <button v-on:click="reverseMessage">反转 Message</button>
+    </div>
+    <div id="two-way-binding">
+        <p>{{ message }}</p>
+        <input v-model="message" />
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="./input.js"></script>
+</body>
