@@ -1,8 +1,10 @@
-function isObj (obj) {
+function isObj(obj) {
   return (typeof obj === 'object' || typeof obj === 'function') && obj !== null
 }
 
-function deepCopy (obj) {
+console.log(typeof isObj.prototype.__proto__);
+
+function deepCopy(obj) {
   const tempObj = Array.isArray(obj) ? [] : {}
   for (const key in obj) {
     tempObj[key] = isObj(obj[key]) ? deepCopy(obj[key]) : obj[key]

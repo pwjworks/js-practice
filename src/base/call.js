@@ -7,3 +7,12 @@ Function.prototype.myCall = function (context) {
   delete context.fn
   return result
 }
+
+Function.prototype.myCall = function (context) {
+  let ctx = context || window;
+  ctx.fn = this;
+  let args = [...arguments].slice(1);
+  let res = ctx.fn(...args);
+  delete context.fn;
+  return res;
+}
