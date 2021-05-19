@@ -43,3 +43,7 @@ var test = [3, 2, 1, 4, 5, 3, 4, 5];
 console.log("test", test)
 quickSortIterative(test, 0, 7)
 console.log(test)
+
+let test2 = [3, 2, 1, 4, 5, 3, 4, 5];
+digui(test2, 0, 7)
+console.log(test2);
